@@ -1,0 +1,20 @@
+body {
+    padding: 0;
+    background-image: url('./images/Canvas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+body {
+    background-attachment: fixed;
+}
+
+p {
+    color: #036A41;
+    text-align: center;
+}
+
+.text {
+    font-size: 21px;
+}
