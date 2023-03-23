@@ -2,7 +2,7 @@ const data = {
     "username": "foneworks",
     "password": "HuNterG@m3@2023!@"
 };
-var testersUsers = ['Yokim Pillay', 'Craig Durrant']
+
 
 function mobile(arg) {
 
@@ -18,8 +18,6 @@ function mobile(arg) {
 }
 
 function desktop(arg) {
-    console.log(arg);
-    console.log(arg[0])
     const half = Math.ceil(arg.length / 2);
 
     const firstHalf = arg.slice(0, half);
@@ -65,6 +63,7 @@ function setScores(arg) {
     document.querySelector('.loader').style.display = 'none';
     const labelEmail = document.querySelector('.loader-css');
     labelEmail.remove();
+    console.log('Full list of sorted data with scores and added days alive to key property value', newArray);
 }
 
 function passData(dataArg) {
@@ -86,41 +85,41 @@ function passData(dataArg) {
             })
         });
         if (userIfo.firstname === 'Yokim' && userIfo.lastname === 'Pillay') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Craig' && userIfo.lastname === 'Durrant') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Garth' && userIfo.lastname === 'Goodman') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Kenton' && userIfo.lastname === 'Vos') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Nick' && userIfo.lastname === 'Argyros') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Thato' && userIfo.lastname === 'Maloka') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Aaron' && userIfo.lastname === 'Roche') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Alexandria' && userIfo.lastname === 'Nice') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Christian' && userIfo.lastname === 'Ngubane') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Samantha' && userIfo.lastname === 'Slabbert') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Bianca' && userIfo.lastname === 'Hart') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Bianca' && userIfo.lastname === 'Hart') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Brent' && userIfo.lastname === 'Robinson') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Craig' && userIfo.lastname === 'Wells') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Ignatius' && userIfo.lastname === 'Mutizwa') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Luke vd' && userIfo.lastname === 'Walt') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Tasleem' && userIfo.lastname === 'Sellars') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else if (userIfo.firstname === 'Tilesh' && userIfo.lastname === 'Bhaga') {
-            console.log(userIfo)
+            // console.log(userIfo)
         } else {
             newFilteredData.push({ id, daysAlive, mini_game_play_data: [...playerGames, ...resetsLoop], ...userIfo })
         }
@@ -157,7 +156,7 @@ fetch("https://api-services.injozitech.com/api/hunters/v1/login", {
     })
     .then((response) => response.json())
     .then((data) => {
-        console.log("Success:", data.token);
+        // console.log("Success:", data.token);
         getData(data.token);
     })
     .catch((error) => {
