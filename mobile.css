@@ -23,6 +23,18 @@
     .desktop-white-section {
         min-height: 90px;
     }
+    .div-column-white p,
+    .star,
+    .number {
+        font-size: 15px;
+    }
+    .t {
+        font-size: 10px!important;
+        padding: 0px;
+    }
+    .div-column-gold {
+        padding: 5px;
+    }
 }
 
 @media (max-width:500px) {

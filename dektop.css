@@ -1,5 +1,5 @@
 .desktop {
-    width: 80%;
+    width: 95%;
     height: auto;
     padding-bottom: 20px;
     margin: auto;
@@ -43,13 +43,13 @@
 }
 
 .div-table {
-    width: 45%;
+    width: 48%;
 }
 
 .top-table {
     width: 100%;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 25% 25% 25% 25%;
     padding: 0px;
     margin: 0px;
 }
@@ -81,7 +81,7 @@
     padding: 0px;
     text-align: center;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 .star img {

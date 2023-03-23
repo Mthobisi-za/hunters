@@ -2,6 +2,7 @@ const data = {
     "username": "foneworks",
     "password": "HuNterG@m3@2023!@"
 };
+var testersUsers = ['Yokim Pillay', 'Craig Durrant']
 
 function mobile(arg) {
 
@@ -17,6 +18,7 @@ function mobile(arg) {
 }
 
 function desktop(arg) {
+    console.log(arg);
     console.log(arg[0])
     const half = Math.ceil(arg.length / 2);
 
@@ -50,7 +52,7 @@ function setScores(arg) {
         let score = 0;
         obj.mini_game_play_data.forEach(ele => {
             if (ele.final_status === 'Win') {
-                score++;
+                score += 10;
             }
         });
         newArray.push({...obj, score });
@@ -58,8 +60,8 @@ function setScores(arg) {
     newArray.sort((a, b) => (a.score > b.score ? -1 : 1));
     newArray.sort((a, b) => (a.daysAlive > b.daysAlive ? -1 : 1));
 
-    desktop(newArray);
-    mobile(newArray);
+    desktop([newArray[0], newArray[1], newArray[2], newArray[3], newArray[4], newArray[5], newArray[6], newArray[7], newArray[8], newArray[9]]);
+    mobile([newArray[0], newArray[1], newArray[2], newArray[3], newArray[4], newArray[5], newArray[6], newArray[7], newArray[8], newArray[9]]);
     document.querySelector('.loader').style.display = 'none';
     const labelEmail = document.querySelector('.loader-css');
     labelEmail.remove();
@@ -75,6 +77,7 @@ function passData(dataArg) {
         var resetsLoop = [];
         let userIfo = element[reference].foneworksUserData.message;
 
+
         element[reference].resets_data.forEach(ele => {
             var arg = ele['mini_game_play_data'];
             daysAlive = daysAlive + ele.days_alive;
@@ -82,12 +85,53 @@ function passData(dataArg) {
                 resetsLoop.push(ele);
             })
         });
-        newFilteredData.push({ id, daysAlive, mini_game_play_data: [...playerGames, ...resetsLoop], ...userIfo })
+        if (userIfo.firstname === 'Yokim' && userIfo.lastname === 'Pillay') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Craig' && userIfo.lastname === 'Durrant') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Garth' && userIfo.lastname === 'Goodman') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Kenton' && userIfo.lastname === 'Vos') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Nick' && userIfo.lastname === 'Argyros') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Thato' && userIfo.lastname === 'Maloka') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Aaron' && userIfo.lastname === 'Roche') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Alexandria' && userIfo.lastname === 'Nice') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Christian' && userIfo.lastname === 'Ngubane') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Samantha' && userIfo.lastname === 'Slabbert') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Bianca' && userIfo.lastname === 'Hart') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Bianca' && userIfo.lastname === 'Hart') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Brent' && userIfo.lastname === 'Robinson') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Craig' && userIfo.lastname === 'Wells') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Ignatius' && userIfo.lastname === 'Mutizwa') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Luke vd' && userIfo.lastname === 'Walt') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Tasleem' && userIfo.lastname === 'Sellars') {
+            console.log(userIfo)
+        } else if (userIfo.firstname === 'Tilesh' && userIfo.lastname === 'Bhaga') {
+            console.log(userIfo)
+        } else {
+            newFilteredData.push({ id, daysAlive, mini_game_play_data: [...playerGames, ...resetsLoop], ...userIfo })
+        }
     });
     newFilteredData.sort((a, b) => a.daysAlive - b.daysAlive);
 
     setScores(newFilteredData);
 }
+//  else if (userIfo.firstname === 'Pula') {
+//     console.log(userIfo)
+// }
 
 function getData(token) {
     var myHeaders = new Headers();
