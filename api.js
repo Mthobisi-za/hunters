@@ -88,7 +88,7 @@ function passData(dataArg) {
         let tester = testUsers.indexOf(fullNames);
 
         if (tester !== -1) {
-            console.log(userIfo, tester)
+            // console.log(userIfo, tester)
         } else {
             newFilteredData.push({ id, daysAlive, mini_game_play_data: [...playerGames, ...resetsLoop], ...userIfo })
         }
