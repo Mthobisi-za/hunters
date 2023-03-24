@@ -2,8 +2,8 @@ const data = {
     "username": "foneworks",
     "password": "HuNterG@m3@2023!@"
 };
-
-
+const testUsers = ['Yokim Pillay', 'Craig Durrant', 'Garth Goodman', 'Kenton Vos', 'Nick Argyros', 'Thato Maloka', 'Aaron Roche', 'Alexandria Nice', 'Christian Ngubane', 'Samantha Slabbert', 'Bianca Hart', 'Brent Robinson', 'Craig Wells', 'Ignatius Mutizwa', 'Luke vd Walt', 'Mthobisi Ngubane', 'Tilesh Bhaga'];
+//
 function mobile(arg) {
 
     for (let i = 0; i < arg.length; i++) {
@@ -84,42 +84,11 @@ function passData(dataArg) {
                 resetsLoop.push(ele);
             })
         });
-        if (userIfo.firstname === 'Yokim' && userIfo.lastname === 'Pillay') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Craig' && userIfo.lastname === 'Durrant') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Garth' && userIfo.lastname === 'Goodman') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Kenton' && userIfo.lastname === 'Vos') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Nick' && userIfo.lastname === 'Argyros') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Thato' && userIfo.lastname === 'Maloka') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Aaron' && userIfo.lastname === 'Roche') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Alexandria' && userIfo.lastname === 'Nice') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Christian' && userIfo.lastname === 'Ngubane') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Samantha' && userIfo.lastname === 'Slabbert') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Bianca' && userIfo.lastname === 'Hart') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Bianca' && userIfo.lastname === 'Hart') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Brent' && userIfo.lastname === 'Robinson') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Craig' && userIfo.lastname === 'Wells') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Ignatius' && userIfo.lastname === 'Mutizwa') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Luke vd' && userIfo.lastname === 'Walt') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Tasleem' && userIfo.lastname === 'Sellars') {
-            // console.log(userIfo)
-        } else if (userIfo.firstname === 'Tilesh' && userIfo.lastname === 'Bhaga') {
-            // console.log(userIfo)
+        let fullNames = userIfo.firstname + ' ' + userIfo.lastname;
+        let tester = testUsers.indexOf(fullNames);
+
+        if (tester !== -1) {
+            console.log(userIfo, tester)
         } else {
             newFilteredData.push({ id, daysAlive, mini_game_play_data: [...playerGames, ...resetsLoop], ...userIfo })
         }

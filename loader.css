@@ -32,13 +32,17 @@ main {
     left: 2.5em;
     width: 3em;
     height: 3em;
+    background-image: url('./images/IGrind\ Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.preloader__square:nth-child(n + 2):nth-child(-n + 3) {
+.preloader__square:nth-child(n+2):nth-child(-n+3) {
     left: 6.5em;
 }
 
-.preloader__square:nth-child(n + 3) {
+.preloader__square:nth-child(n+3) {
     top: 6.5em;
 }
 

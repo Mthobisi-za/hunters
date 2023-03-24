@@ -1,18 +1,29 @@
-@media (max-width:862px) {
+@media (max-width:915px) {
     .div-table {
         width: 90%;
     }
     .div-column-gold {
-        background-size: cover;
+        background-size: contain;
+        text-align: center;
+        width: 60%;
     }
     .mobile {
         display: block;
+    }
+    .div-column-gold p {
+        text-align: center;
+        padding: 0px;
     }
 }
 
 @media (max-width:734px) {
     .desktop-white-section {
         min-height: 100px;
+    }
+    .div-column-gold {
+        background-size: contain;
+        text-align: center;
+        width: 70%;
     }
 }
 
@@ -49,3 +60,20 @@
         background-size: contain;
     }
 }
+
+@media(max-width:372px) {
+    .div-column-gold {
+        background-size: cover;
+        padding: 0px;
+        width: 90%;
+    }
+    .div-table {
+        width: 100%;
+    }
+}
+
+
+/* responsive font */
+
+
+/* responsive font */

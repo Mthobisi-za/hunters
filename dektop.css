@@ -29,7 +29,7 @@
 
 .desktop-white-section {
     min-width: 70%;
-    background-color: #fff;
+    background-color: transparent;
     min-height: 170px;
     max-width: 50%;
     border-bottom-right-radius: 30px;
@@ -107,8 +107,51 @@
     }
 }
 
-@media (max-width:862px) {
+@media (max-width:862px) {}
+
+
+/* responsive font */
+
+@media (max-width:1540px) {
+    .div-column-gold {
+        width: 70%;
+    }
+}
+
+@media (max-width:1395px) {
+    .div-column-gold {
+        width: 80%;
+    }
+    .div-column-gold p {
+        padding: 10px;
+    }
+}
+
+@media (max-width:1272px) {
+    .div-column-gold {
+        width: 90%;
+        padding: 0px;
+    }
+    .div-column-gold p {
+        padding: 5px;
+    }
+}
+
+@media (max-width:1018px) {
+    .div-column-gold {
+        width: 90%;
+        padding: 5px;
+    }
+    .div-column-gold p {
+        padding: 0px;
+    }
+}
+
+@media (max-width:915px) {
     .desktop {
         display: none;
     }
 }
+
+
+/* responsive font */
