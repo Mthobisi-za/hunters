@@ -2,7 +2,7 @@ const data = {
     "username": "foneworks",
     "password": "HuNterG@m3@2023!@"
 };
-const testUsers = ['Yokim Pillay', 'Craig Durrant', 'Garth Goodman', 'Kenton Vos', 'Nick Argyros', 'Thato Maloka', 'Aaron Roche', 'Alexandria Nice', 'Christian Ngubane', 'Samantha Slabbert', 'Bianca Hart', 'Brent Robinson', 'Craig Wells', 'Ignatius Mutizwa', 'Luke vd Walt', 'Mthobisi Ngubane', 'Tilesh Bhaga', 'Pula Simango', 'Saarah Joubert', 'Neo Mojanaga', 'Neo Koto', 'Tanya Galbraith'];
+const testUsers = ['Yokim Pillay', 'Craig Durrant', 'Garth Goodman', 'Kenton Vos', 'Nick Argyros', 'Thato Maloka', 'Aaron Roche', 'Alexandria Nice', 'Christian Ngubane', 'Samantha Slabbert', 'Bianca Hart', 'Brent Robinson', 'Craig Wells', 'Ignatius Mutizwa', 'Luke vd Walt', 'Mthobisi Ngubane', 'Tilesh Bhaga', 'Pula Simango', 'Saarah Joubert', 'Neo Mojanaga', 'Neo Koto', 'Tanya Galbraith', 'Set Qw'];
 //
 function mobile(arg) {
 
@@ -88,7 +88,7 @@ function passData(dataArg) {
         let tester = testUsers.indexOf(fullNames);
 
         if (tester !== -1) {
-            // console.log(userIfo, tester)
+            console.log(userIfo, tester)
         } else {
             newFilteredData.push({ id, daysAlive, mini_game_play_data: [...playerGames, ...resetsLoop], ...userIfo })
         }
