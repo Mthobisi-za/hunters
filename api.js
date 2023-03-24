@@ -86,11 +86,9 @@ function passData(dataArg) {
         });
         let fullNames = userIfo.firstname + ' ' + userIfo.lastname;
         let tester = testUsers.indexOf(fullNames);
-        if (userIfo.firstname === 'Saarah') {
-            console.log(userIfo)
-        }
+
         if (tester !== -1) {
-            console.log(userIfo, tester)
+            // console.log(userIfo, tester)
         } else {
             newFilteredData.push({ id, daysAlive, mini_game_play_data: [...playerGames, ...resetsLoop], ...userIfo })
         }
