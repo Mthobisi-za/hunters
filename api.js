@@ -2,7 +2,7 @@ const data = {
     "username": "foneworks",
     "password": "HuNterG@m3@2023!@"
 };
-const testUsers = ['Yokim Pillay', 'Craig Durrant', 'Garth Goodman', 'Kenton Vos', 'Nick Argyros', 'Thato Maloka', 'Aaron Roche', 'Alexandria Nice', 'Christian Ngubane', 'Samantha Slabbert', 'Bianca Hart', 'Brent Robinson', 'Craig Wells', 'Ignatius Mutizwa', 'Luke vd Walt', 'Mthobisi Ngubane', 'Tilesh Bhaga'];
+const testUsers = ['Yokim Pillay', 'Craig Durrant', 'Garth Goodman', 'Kenton Vos', 'Nick Argyros', 'Thato Maloka', 'Aaron Roche', 'Alexandria Nice', 'Christian Ngubane', 'Samantha Slabbert', 'Bianca Hart', 'Brent Robinson', 'Craig Wells', 'Ignatius Mutizwa', 'Luke vd Walt', 'Mthobisi Ngubane', 'Tilesh Bhaga', 'Pula Simango', 'Saarah Joubert', 'Neo Mojanaga', 'Neo Koto', 'Tanya Galbraith'];
 //
 function mobile(arg) {
 
@@ -86,7 +86,9 @@ function passData(dataArg) {
         });
         let fullNames = userIfo.firstname + ' ' + userIfo.lastname;
         let tester = testUsers.indexOf(fullNames);
-
+        if (userIfo.firstname === 'Saarah') {
+            console.log(userIfo)
+        }
         if (tester !== -1) {
             console.log(userIfo, tester)
         } else {
