@@ -2,13 +2,13 @@ const data = {
     "username": "foneworks",
     "password": "HuNterG@m3@2023!@"
 };
-const testUsers = ['Yokim Pillay', 'Craig Durrant', 'Garth Goodman', 'Kenton Vos', 'Nick Argyros', 'Thato Maloka', 'Aaron Roche', 'Alexandria Nice', 'Christian Ngubane', 'Samantha Slabbert', 'Bianca Hart', 'Brent Robinson', 'Craig Wells', 'Ignatius Mutizwa', 'Luke vd Walt', 'Mthobisi Ngubane', 'Tilesh Bhaga', 'Pula Simango', 'Saarah Joubert', 'Neo Mojanaga', 'Neo Koto', 'Tanya Galbraith', 'Set Qw'];
+const testUsers = ['Yokim Pillay', 'Craig Durrant', 'Garth Goodman', 'Kenton Vos', 'Nick Argyros', 'Thato Maloka', 'Aaron Roche', 'Alexandria Nice', 'Christian Ngubane', 'Samantha Slabbert', 'Bianca Hart', 'Brent Robinson', 'Craig Wells', 'Ignatius Mutizwa', 'Luke vd Walt', 'Mthobisi Ngubane', 'Tilesh Bhaga', 'Pula Simango', 'Saarah Joubert', 'Neo Mojanaga', 'Neo Koto', 'Tanya Galbraith', 'Set Qw', 'Greg Seiler'];
 //
 function mobile(arg) {
 
     for (let i = 0; i < arg.length; i++) {
         let counter = i + 1;
-        if (counter == 1 || counter == 2 || counter == 3) {
+        if (counter == 1) {
             createElementsForMobile({...arg[i], index: i + 1, link: './images/gold-start.ico' });
         } else {
             createElementsForMobile({...arg[i], index: i + 1 });
@@ -25,7 +25,7 @@ function desktop(arg) {
 
     for (let i = 0; i < firstHalf.length; i++) {
         let counter = i + 1;
-        if (counter == 1 || counter == 2 || counter == 3) {
+        if (counter == 1) {
             createElementsLeft({...firstHalf[i], index: i + 1, link: './images/gold-start.ico' });
         } else {
             createElementsLeft({...firstHalf[i], index: i + 1 });
