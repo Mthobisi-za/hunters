@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Gatholic Bold;
+    src: url('./fonts/Trade\ Gothic\ LT\ Bold.ttf');
+}
+
 .desktop {
     width: 95%;
     height: auto;
@@ -20,11 +25,11 @@
 
 .desktop-logo-section {
     text-align: right;
-    width: 30%;
+    width: 100%;
 }
 
 .desktop-logo-section img {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .desktop-white-section {
@@ -66,6 +71,7 @@
 
 .div-column-gold p {
     padding: 5px;
+    font-family: Gatholic Bold;
 }
 
 .table-content {
@@ -89,6 +95,7 @@
     width: 25px;
     margin-right: 10px;
     margin-left: -20px;
+    font-family: Gatholic Bold;
 }
 
 .number {

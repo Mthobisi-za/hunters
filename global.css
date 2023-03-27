@@ -1,20 +1,36 @@
+@font-face {
+    font-family: Gatholic Bold;
+    src: url('./fonts/Trade\ Gothic\ LT\ Bold.ttf');
+}
+
+* {
+    font-family: Gatholic Bold;
+}
+
+
+/* TradeGothic LT Bold */
+
 body {
     padding: 0;
     background-image: url('./images/Canvas.png');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
-}
-
-body {
     background-attachment: fixed;
 }
 
 p {
     color: #036A41;
     text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .text {
-    font-size: 16px;
+    font-size: 17px;
+    font-family: Gatholic Bold;
+}
+
+img {
+    margin-top: 0px;
 }
